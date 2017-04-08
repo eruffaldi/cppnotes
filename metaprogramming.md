@@ -9,7 +9,7 @@ Metaprogramming Snippets
     template<typename D, typename B>
     using extends = typename std::enable_if<std::is_base_of<B,D>::value>::type;
 
-    template <class T, typename X = extends<MYCLASS,T> >
+    template <class T, typename X = extends<T,MYCLASS> >
     void MYFX(T & p);
 
     
