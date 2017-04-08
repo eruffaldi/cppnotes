@@ -2,9 +2,7 @@
 
 Metaprogramming Snippets
 
-# Restrict template type for function
-
-This creates a template function MYFX(T&) where T has MYCLASS as base
+# Restrict template type as derived from class
 
     #include <type_traits>
 
