@@ -61,6 +61,8 @@ This is used when we want to accept a functional with given signature (function,
 
 Note: the match is not exact and it allows for cast
 
-C++17 provides is_invocable
+C++17 provides [is_invocable](http://en.cppreference.com/w/cpp/types/is_invocable)
+
+Noteworthy: decltype(Tv,void(),Rv). This construct is used to return type R if we have the value Tv. void() is added for the issue of special overloading of comma in T.
 
 Modified from: http://stackoverflow.com/questions/5100015/c-metafunction-to-determine-whether-a-type-is-callable 
