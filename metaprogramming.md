@@ -20,7 +20,7 @@ That is equivalent to a function MYFX accepting only pointers/references to a ba
 This is used when we want to accept a functional with given signature (function, function pointer, lambda, functor, std::function...), or check if a function can be used for given arguments
 
     #include <utility>
-#include <iostream>
+    #include <iostream>
 
     template<class F, class...Args>
     struct is_callable
